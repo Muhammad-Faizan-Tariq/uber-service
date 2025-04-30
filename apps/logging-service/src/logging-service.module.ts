@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { LoggingServiceController } from './logging-service.controller';
 import { LoggingServiceService } from './logging-service.service';
-
+import { MongooseModule } from '@nestjs/mongoose';
 @Module({
-  imports: [],
+  imports: [MongooseModule.forRoot('mongodb://localhost:27017/logging-service')],
   controllers: [LoggingServiceController],
   providers: [LoggingServiceService],
 })
