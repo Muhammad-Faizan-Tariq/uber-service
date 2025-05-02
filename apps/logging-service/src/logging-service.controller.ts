@@ -1,5 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, } from '@nestjs/common';
 import { LoggingServiceService } from './logging-service.service';
+
 
 @Controller()
 export class LoggingServiceController {
